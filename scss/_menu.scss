@@ -40,8 +40,8 @@
     &.show {
         visibility: visible;
     }
-    .menu-branding,
-    .menu-nav {
+    &-branding,
+    &-nav {
         display: flex;
         flex-flow: column wrap;
         align-items: center;
@@ -51,7 +51,7 @@
         height: 100vh;
         overflow: hidden;
     }
-    .menu-nav {
+    &-nav {
         margin: 0;
         padding: 0;
         background: darken($primary-color, 5);
@@ -63,7 +63,7 @@
             transform: translate3d(0, 0, 0)
         }
     }
-    .menu-branding {
+    &-branding {
         margin: 0;
         padding: 0;
         background: $primary-color;
@@ -73,7 +73,7 @@
             // Slide in form bottom
             transform: translate3d(0, 0, 0)
         }
-        .protrait {
+        .portrait {
             width: 250px;
             height: 250px;
             background: url('../img/portrait.jpg');
