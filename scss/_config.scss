@@ -28,7 +28,7 @@ $background-opacity: 0.9;
 }
 
 // Set Text Colo
-@function set-text-color($color) {
+@function set-color($color) {
     @if(lightness($color) > 40) {
         @return #000;
     }
